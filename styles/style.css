@@ -11,14 +11,17 @@
     --bright-blue: hsl(245, 75%, 52%);
     
     /* neutral colors */
-    --very-pale-blue: hsl(255, 100%, 98%);
+    --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue: hsl(224, 23%, 55%);
     --dark-blue: hsl(223, 47%, 23%);
+
+    /* font setting */
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 body {
-    font-size: 16px;
-    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
     background-color: var(--pale-blue);
     background-image: url(../images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
@@ -27,4 +30,111 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h1,
+h3 {
+    color: var(--dark-blue);
+}
+
+p {
+    color: var(--desaturated-blue);
+}
+
+/* MAIN */
+
+main {
+    max-width: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 1.5rem 2rem hsla(244, 82%, 66%, 20%);
+    margin-block: 50px;
+}
+
+/* Illustration */
+
+.illustration img {
+    max-height: 220px;
+}
+
+
+/* Order */
+
+.order {
+    padding: 40px 50px;
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin-bottom: 25px;
+}
+
+.order p {
+    line-height: 1.5rem;
+}
+
+.pricing-container {
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+    padding: 25px 20px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--desaturated-blue);
+}
+
+.pricing-container > div {
+    display: flex;
+}
+
+.pricing-container a {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--bright-blue);
+}
+
+.pricing-container a:visited {
+    color: var(--bright-blue);
+}
+
+.pricing-description {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pricing-description h3,
+.pricing-description p {
+    font-size: 1rem;
+}
+
+/* Buttons */
+
+button {
+    border: 0;
+    width: 100%;
+    border-radius: 10px;
+    padding-block: 15px;
+    margin: 10px 0;
+    background-color: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:last-child {
+    margin-bottom: 0;
+}
+
+.primary-btn {
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    box-shadow: 0 1rem 1rem hsla(244, 82%, 66%, 25%);
+}
+
+.secondary-btn {
+    color: var(--desaturated-blue);
 }
