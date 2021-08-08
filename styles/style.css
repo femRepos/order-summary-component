@@ -23,6 +23,7 @@
 body {
     text-align: center;
     background: var(--pale-blue) url(../images/pattern-background-desktop.svg) no-repeat top;
+    background-size: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -154,7 +155,7 @@ button:last-child {
     main {
         border-radius: 20px;
         margin-block: 70px;
-        min-width: 275px;
+        min-width: 295px;
     }
 
     h1 {
