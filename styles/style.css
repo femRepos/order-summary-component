@@ -22,10 +22,7 @@
 
 body {
     text-align: center;
-    background-color: var(--pale-blue);
-    background-image: url(../images/pattern-background-desktop.svg);
-    background-repeat: no-repeat;
-    background-position: top;
+    background: var(--pale-blue) url(../images/pattern-background-desktop.svg) no-repeat top;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -54,8 +51,10 @@ main {
 
 /* Illustration */
 
-.illustration img {
+main > img {
     max-height: 220px;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -72,6 +71,7 @@ h1 {
 
 .order p {
     line-height: 1.5rem;
+    word-spacing: 0.15rem;
 }
 
 .pricing-container {
@@ -103,7 +103,7 @@ h1 {
     margin-left: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .pricing-description h3,
@@ -137,4 +137,39 @@ button:last-child {
 
 .secondary-btn {
     color: var(--desaturated-blue);
+}
+
+@media only screen and (max-width: 525px) {
+    /* Global */
+
+    :root {
+        font-size: 15px;
+    }
+
+    body {
+        background: var(--pale-blue) url(../images/pattern-background-mobile.svg) no-repeat top;
+        padding: 0 25px;
+    }
+
+    main {
+        border-radius: 20px;
+        margin-block: 70px;
+        min-width: 275px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .order {
+        padding: 25px;
+    }
+
+    .pricing-container {
+        padding: 15px;
+    }
+
+    button {
+        margin-block: 5px;
+    }
 }
