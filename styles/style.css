@@ -9,6 +9,7 @@
     /* primary colors */
     --pale-blue: hsl(225, 100%, 94%);
     --bright-blue: hsl(245, 75%, 52%);
+    --bright-blue-hover: hsl(245, 75%, 65%);
     
     /* neutral colors */
     --very-pale-blue: hsl(225, 100%, 98%);
@@ -100,6 +101,10 @@ h1 {
     color: var(--bright-blue);
 }
 
+.pricing-container a:hover {
+    color: var(--bright-blue-hover);
+}
+
 .pricing-description {
     margin-left: 15px;
     display: flex;
@@ -136,8 +141,16 @@ button:last-child {
     box-shadow: 0 1rem 1rem hsla(244, 82%, 66%, 25%);
 }
 
+.primary-btn:hover {
+    background-color: var(--bright-blue-hover);
+}
+
 .secondary-btn {
     color: var(--desaturated-blue);
+}
+
+.secondary-btn:hover {
+    color: var(--dark-blue);
 }
 
 @media only screen and (max-width: 525px) {
